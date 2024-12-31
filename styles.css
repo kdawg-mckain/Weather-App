@@ -1,0 +1,122 @@
+html, body {
+    height: 100%; /* Ensures the HTML and body take up the full height of the viewport */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    background-image: linear-gradient(to bottom, white 0%, white 30%, blue 70%, blue 100%);
+    background-attachment: fixed; /* Makes the gradient fixed */
+    background-size: 100% 100vh; /* Ensures the gradient covers the entire viewport height */
+    background-repeat: repeat-y; /* Repeats the gradient vertically */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    justify-content: flex-start; /* Aligns content to the top */
+    align-items: center;
+}
+
+.container {
+    width: 90%; /* Limits the container width to 90% of the screen */
+    max-width: 400px; /* Ensures the container doesn't get too wide on larger screens */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+h1 {
+    font-size: 2em; /* Smaller font size for mobile */
+    margin-bottom: 20px;
+    color: #000000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; /* Adds space at the top */
+}
+
+button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px; /* Smaller padding for mobile */
+    border-radius: 5px;
+    font-size: 1em; /* Smaller font size for mobile */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.1);
+    width: 100%; /* Makes the button full width */
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%; /* Makes the input full width */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+#searchWeatherBtn {
+    margin-left: 0; /* Removes the left margin for mobile */
+    margin-top: 10px; /* Adds space between input and button */
+}
+
+#weatherInfo {
+    margin-top: 20px;
+    font-size: 1em; /* Smaller font size for mobile */
+}
+#weatherInfo {
+    margin-top: 20px; /* Adds space between the button and weather info */
+    font-size: 1.2em; /* Slightly larger font size for better readability */
+    color: #000000; /* Black text color */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 15px; /* Adds padding inside the weather info box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+.forecast-item {
+    margin-top: 15px; /* Space between forecast items */
+    padding: 10px; /* Padding inside each forecast item */
+    background-color: rgba(240, 240, 240, 0.9); /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+#forecastInfo {
+    margin-top: 20px; /* Adds space between the current weather and forecast */
+    font-size: 0.9em; /* Smaller font size for compactness */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between forecast items */
+}
+
+.forecast-item {
+    padding: 10px; /* Smaller padding */
+    background-color: rgba(240, 240, 240, 0.9); /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center-align text */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.forecast-item h3 {
+    font-size: 1em; /* Smaller font size for the date */
+    margin: 0 0 5px 0; /* Reduce margin */
+}
+
+.forecast-item p {
+    font-size: 0.8em; /* Smaller font size for temperature and weather */
+    margin: 0; /* Remove default margins */
+}
